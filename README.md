@@ -23,11 +23,8 @@ The agent intelligently converts your question into SQL, executes it safely, and
 - Caching of database connection for better performance
 
 ## Project Structure
-├── app.py                 # Main Streamlit application
-├── sqlite.py              # Script to create and populate student.db
-├── student.db             # SQLite database file
-├── requirements.txt       # Python dependencies
-└── README.md
+<img width="633" height="203" alt="image" src="https://github.com/user-attachments/assets/103c395a-8516-4544-a1f3-d25fbd9dd724" />
+
 
 ## Tech Stack
 
