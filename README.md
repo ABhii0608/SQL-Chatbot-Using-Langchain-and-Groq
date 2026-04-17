@@ -1,7 +1,5 @@
 # SQL-Chatbot-Using-Langchain-and-Groq
 
-# LangChain SQL Chatbot with Streamlit
-
 An AI-powered conversational interface that lets you **chat with your SQL database** using natural language. Built with **LangChain**, **Groq LLM**, and **Streamlit**.
 
 Ask questions like:
