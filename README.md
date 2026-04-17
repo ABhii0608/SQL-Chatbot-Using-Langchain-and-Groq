@@ -39,6 +39,6 @@ The agent intelligently converts your question into SQL, executes it safely, and
 
 1. Add your Groq API Key in the sidebar.
 2. Choose the database:
-  - Use SQLITE 3 Database- Student.db (default, local)
-  - Connect to your SQL Database (MySQL – enter host, user, password, db name)
+    - Use SQLITE 3 Database- Student.db (default, local)
+    - Connect to your SQL Database (MySQL – enter host, user, password, db name)
 3. Start chatting with the database in natural language.
