@@ -10,7 +10,7 @@ from langchain_groq import ChatGroq
 
 st.set_page_config(page_title="Langchain: Chat with SQL DB", page_icon="")
 st.title(" Langchain: Chat with SQL DB")
-
+api_key = st.secrets["GROQ_API_KEY"]
 LOCALDB="USE_LOCALDB"
 MYSQL="USE_MYSQL"
 
