@@ -39,14 +39,14 @@ if not api_key:
 import os
 from dotenv import load_dotenv
 load_dotenv()
-os.environ["GOOGLE_API_KEY"]=os.getenv("GOOGLE_API_KEY")
 
 llm=ChatGroq(groq_api_key=api_key, model_name="meta-llama/llama-4-scout-17b-16e-instruct",streaming=True)
 
 @st.cache_resource(ttl="2h")
 def configure_db(db_uri,mysql_host=None,mysql_user=None,mysql_password=None,mysql_db=None):
     if db_uri==LOCALDB:
-        dbfilepath=(Path(__file__).parent/"student.db").absolute()
+        ##dbfilepath=(Path(__file__).parent/"student.db").absolute()
+        dbfilepath = Path("student.db")
         print(dbfilepath)
         creator = lambda: sqlite3.connect(f"file:{dbfilepath}?mode=ro",uri=True)
         return SQLDatabase(create_engine("sqlite:///",creator=creator))
