@@ -40,7 +40,8 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
-llm=ChatGroq(groq_api_key=api_key, model_name="meta-llama/llama-4-scout-17b-16e-instruct",streaming=True)
+##llm=ChatGroq(groq_api_key=api_key, model_name="meta-llama/llama-4-scout-17b-16e-instruct",streaming=True)
+llm=ChatGroq(model_name="meta-llama/llama-4-scout-17b-16e-instruct",streaming=True)
 
 @st.cache_resource(ttl="2h")
 def configure_db(db_uri,mysql_host=None,mysql_user=None,mysql_password=None,mysql_db=None):
